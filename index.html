@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front End Learning Fundamentals</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body onload="showDate()" id="body">
+	<div class="header">
+		<h1 id="heading">Learning JavaScript</h1>
+		<p id="autor">With Cristi<p>
+	</div>
+
+	<div class="container">
+		<button onclick="doClick()">Click Me</button>
+		<button onclick="this.innerHTML = 'You Clicked!'">Click Me</button>
+		<button onclick="changeText(this)">Click Me</button>
+		<br>
+		<button onclick="ChangeText()">Click Me</button>
+		<br>
+		<button onclick="schimbAutor()">Schimba-ma</button>
+		<br>
+		<h1 id="time"></h1>
+		<button onclick="showDate()">Show Date</button>
+		<button onclick="hideDate()">Hide date</button>
+		<br>
+		<button id="textButon" onmouseover="changeButtonText()">Cristi are mere</button>
+	</div>
+	<form method="post" action="something.php" name="myForm" onsubmit="return validateForm()">
+		<div>
+			<label>First Name</label>
+			<input type="text" name="firstName" id="firstName" />
+		</div>
+		<br />
+		<div>
+			<label>Last Name</label>
+			<input type="text" name="lastName" id="lastName" />
+		</div>
+		<br />
+		<div>
+			<label>Color</label>
+			<select name="Color" id="Color" onchange="changeColor(this)">
+				<option value="red">Red</option>
+				<option value="blue">Blue</option>
+				<option value="green">Green</option>
+			</select>
+		</div>
+		<br />
+		<input type="submit" value="Submit" />
+	</form>
+</body>
+
+</head>
